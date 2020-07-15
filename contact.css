@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans&family=Assistant&family=Montserrat&display=swap');
+html {
+    /*
+    Typical default browser font-size is 16px.
+    62.5% of 16px = 10px, making 1rem = 10px.
+  */
+    font-size: 62.5%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: Alegreya, sans-serif;
+}
+
+.container {
+    font-size: 1.6rem;
+    position: absolute;
+    margin: 0 2rem;
+}
+
+.header {
+    background-color: aliceblue;
+    border-top: 0.3rem solid darkblue;
+    border-bottom: 0.3rem solid darkblue;
+    color: darkblue;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    padding: 1rem 0;
+    text-align: center;
+    width: 100%;
+}
+
+.footer {
+    background-color: aliceblue;
+    border-top: 0.3rem solid darkblue;
+    border-bottom: 0.3rem solid darkblue;
+    color: darkblue;
+    font-weight: 500;
+    margin-top: 2rem;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.main {
+    font-size: 1.6rem;
+    display: grid;
+    grid-template-columns: 3rem repeat(10, minmax(min-content, 1fr)) 3rem;
+    grid-template-rows: min-content 1fr min-content;
+    grid-row-gap: 1.6rem;
+    height: max-content;
+}
+
+.contact-photo {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    height: 23rem;
+}
+
+.contact-image {
+    height: 100%;
+    object-fit: cover;
+}
+
+.contact-details {
+    grid-column: 3 / 12;
+    grid-row: 1 / 2;
+    margin-left: 3rem;
+    position: relative;
+    height: min-content;
+    top: 11.5rem;
+    transform: translateY(-50%);
+}
+
+.contact-form {
+    grid-column: 3 / 12;
+    grid-row: 2 / 3;
+    font-size: 1.6rem;
+    border-top: 0.1rem solid darkblue;
+    padding-top: 3rem;
+}
+
+.contact-form label {
+    display: inline-block;
+    width: 12rem;
+}
+
+.contact-form input {
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    margin: 0.5rem 0;
+    padding: 1rem;
+    width: 30rem;
+}
+
+.contact-form input[type="checkbox"] {
+    width: auto;
+    margin-bottom: 1rem;
+}
+
+.contact-form input[type="number"] {
+    width: auto;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+
+.contact-form input[type="radio"] {
+    width: auto;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+
+.contact-form .checkbox-label {
+    width: auto;
+}
+
+.contact-form input[type="color"] {
+    border: none;
+    height: 3.6rem;
+    padding: 0;
+    width: 30rem;
+}
+
+.contact-form input[type="submit"] {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: auto;
+}
+
+.contact-form textarea {
+    border-radius: 1rem;
+    border-radius: 1rem 1rem 0 1rem;
+}
+
+.message {
+    margin-top: 1rem;
+}
+
+.message-label {
+    vertical-align: top;
+}

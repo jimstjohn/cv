@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="contact.css" />
+  <title>Jim&apos;s Contact Info</title>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="header">
+      <span>The Complete 2020 Web Development Bootcamp (Angela Yu)</span>
+    </div>
+
+    <div class="main">
+
+      <div class="contact-photo">
+        <img src="images/jim_circle.png" alt="Jim&apos;s profile photo" class="contact-image" />
+      </div>
+
+      <div class="contact-details">
+        <h1 class="contact-name">James G. St. John</h1>
+        <i>
+          <p class="contact-demographics">
+            <i><b>CTO, BRS Systems, LLC</b>.</i>
+          </p>
+          <p>7 Skyline Drive, Suite 360</p>
+          <p>Hawthorne, NY 10532</p>
+          <p>+1 914-495-3744</p>
+          <p>
+            <a href="mailto:jim.stjohn@brsdental.com">jim.stjohn@brsdental.com</a>
+          </p>
+        </i>
+      </div>
+
+      <!-- <form class="contact-form" action="index.html" method="POST"> -->
+      <form class="contact-form" action="mailto:info@stjohn3.net" method="POST" enctype="text/plain">
+
+        <label for="name">Name:</label>
+        <input type="text" name="contactName" id="name" placeholder="Your name" required>
+        <br><label for="email">Email:</label>
+        <input type="email" name="contactEmail" id="email" placeholder="e-mail addr" required>
+
+        <br><label for="message" class="message message-label">Message:</label>
+        <textarea name="contactMessage" id="message" rows="8" cols="80" class="message message-area"></textarea>
+
+        <br><label></label>
+        <input type="submit">
+
+      </form>
+
+    </div>
+
+    <div class="footer">
+      <span>Copyright &copy; 2020&nbsp;&nbsp;James G. St. John.&nbsp;&nbsp;All rights reserved.</span>
+    </div>
+
+  </div>
+
+</body>
+
+</html>
