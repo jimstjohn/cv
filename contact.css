@@ -3,7 +3,8 @@
     display: grid;
     grid-template-columns: 3rem repeat(10, minmax(min-content, 1fr)) 3rem;
     grid-template-rows: min-content 1fr min-content;
-    grid-row-gap: 1.6rem;
+    /* grid-row-gap: 1.6rem; */
+    grid-gap: 1.6rem;
     height: max-content;
 }
 
